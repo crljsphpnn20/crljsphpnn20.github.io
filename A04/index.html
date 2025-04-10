@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project A04 | Poonin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .home {
+            min-height: 10vh;
+            background: linear-gradient(to top, #000000 0%, #6d00d4 100%);
+        }
+
+        .img-product img {
+            padding-top: 60px;
+            width: 800px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .specs {
+            min-height: 80vh;
+            background: black;
+        }
+
+        .products {
+            min-height: 100vh;
+            background: linear-gradient(to top, #131e52 0%, #0104ad 100%);
+        }
+
+        .contact {
+            min-height: 30vh;
+            background: #020015;
+        }
+
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        .img-product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .img-product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-name {
+            color: white;
+            font-size: 64px;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            line-height: 0.8;
+        }
+
+        .description {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+            margin-top: 2px;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-size: 32px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            font-size: 18px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        h1 {
+            font-family: "Raleway", sans-serif;
+            margin-top: 50px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        li {
+            font-family: "Raleway", sans-serif;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            margin-top: 15px;
+        }
+
+        .custom-card {
+            background: linear-gradient(to top, #300fc7 0%, #000279 100%);
+            color: #ffffff;
+            border-radius: 24px;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: auto;
+            align-self: flex-start;
+            text-align: left;
+        }
+
+        .btn {
+            font-family: "Raleway", sans-serif;
+            border-radius: 16px;
+            padding: 15px;
+
+        }
+
+        strong {
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand px-3" href="#">NextGen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#specs">Specification</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#product">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home page -->
+
+    <div class="container-fluid home" id="home">
+        <div class="row">
+            <div class="col img-product py-3">
+                <a href="https://www.itech.ph/product/asus-rog-ally-x-rc72la-z1-extreme-amd-radeon-graphics-12gb2-24gb-lpddr5-1tb-ssd/"
+                    target="_blank" title="Click to shop">
+                    <img src="console-removebg-preview.png" alt="this image dont work in this browser.">
+                </a>
+                <div class="col">
+                    <p class="product-name">
+                        Asus ROG Ally X
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="description">
+                        Experience next-level portable gaming with the ASUS ROG Ally X, a premium handheld PC powered by
+                        the cutting-edge AMD Ryzen™ Z1 Extreme processor and AMD Radeon™ RDNA 3 graphics. Designed for
+                        serious gamers and power users alike, the Ally X brings desktop-class performance to the palm of
+                        your hand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specs page -->
+
+    <div class="container-fluid specs py-5" id="specs">
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold" style="margin-top: 150px; margin-bottom: 100px;">SPECIFICATIONS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <ul class="list-unstyled">
+                    <li><strong>Processor:</strong> AMD Ryzen™ Z1 Extreme (8C/16T, up to 5.10GHz)</li>
+                    <li><strong>Graphics:</strong> AMD Radeon™ RDNA 3 Integrated Graphics</li>
+                    <li><strong>Display:</strong> 7" FHD (1920x1080), 120Hz Touchscreen</li>
+                    <li><strong>Brightness:</strong> Up to 500 nits</li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <ul class="list-unstyled">
+                    <li><strong>Memory:</strong> 24GB LPDDR5 (Dual-Channel)</li>
+                    <li><strong>Storage:</strong> 1TB PCIe Gen 4 SSD</li>
+                    <li><strong>Expandable Storage:</strong> microSD Card Slot</li>
+                    <li><strong>Operating System:</strong> Windows 11</li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <ul class="list-unstyled">
+                    <li><strong>Connectivity:</strong> Wi-Fi 6E, Bluetooth 5.2</li>
+                    <li><strong>Ports:</strong> USB-C (x2), USB-A, 3.5mm audio jack</li>
+                    <li><strong>Audio:</strong> Stereo speakers with Hi-Res Audio</li>
+                    <li><strong>Battery Life:</strong> Up to 8 hours</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="description" style="line-height: 1.5; text-align: justify; padding-top: 100px;">
+                    Equipped with 24GB of high-speed LPDDR5 RAM and a lightning-fast 1TB PCIe SSD, multitasking, game
+                    loading, and file transfers are smoother than ever. Whether you're exploring open-world titles,
+                    emulating retro classics, or streaming your favorite content, the ROG Ally X delivers fluid,
+                    high-resolution gameplay anywhere you go.
+
+                    The immersive 7” Full HD display boasts a 120Hz refresh rate, vibrant color reproduction, and
+                    touchscreen capability—perfectly tuned for both fast-paced action and creative productivity.
+                    Enhanced thermals, ergonomic design upgrades, and long-lasting battery life make extended sessions
+                    comfortable and efficient.
+
+                    Whether docked, connected to an external GPU, or played solo on the go, the ROG Ally X is your
+                    gateway to premium portable gaming—uncompromised, unrestricted, and unforgettable.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Other products page -->
+
+    <div class="container-fluid products py-5" id="product">
+        <div class="row mb-1">
+            <div class="col">
+                <h1 class="display-5 fw-bold py-4">RECOMMENDED PRODUCTS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-3 mb-5">
+                <div class="card m-4 h-100 custom-card shadow">
+                    <img src="KG993-1-removebg-preview.png" class="card-img-top" alt="Monka Storm & Monka Guru">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Monka Storm ＆ Monka Guru Gaming Mechanical Keyboard & Mouse Kit lorem
+                        </h5>
+                        <p class="card-text">₱8499.49</p>
+                        <a href="https://shop.marvo-tech.com/products/monka-storm-monka-guru?_pos=2&_psq=product_type%3AKeyboard+AND+&_ss=e&_v=1.0"
+                            target="_blank" class="btn btn-primary mt-auto">Click to buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-5">
+                <div class="card m-4 h-100 custom-card shadow">
+                    <img src="Monitor-removebg-preview.png" class="card-img-top" alt="Monka Storm & Monka Guru">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Asus ROG Swift OLED 240HZ Ultra-Wide Curved Gaming
+                            Monitor</h5>
+                        <p class="card-text"><i><del>₱84,990</del></i> | ₱81,990</p>
+                        <a href="https://ecommerce.datablitz.com.ph/products/asus-rog-swift-oled-pg34wcdm-34-uwqhd-3440x1440-240hz-0-03ms-gtg-ultra-wide-curved-gaming-monitor"
+                            target="_blank" class="btn btn-primary mt-auto">Click to buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-5">
+                <div class="card m-4 h-100 custom-card shadow">
+                    <img src="powerbank-removebg-preview.png" class="card-img-top" alt="Monka Storm & Monka Guru">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Anker Prime 20,000mAh Power Bank (200W)</h5>
+                        <p class="card-text">₱7,195.50</p>
+                        <a href="https://anker.ph/products/anker-prime-20000mah-power-bank" target="_blank"
+                            class="btn btn-primary mt-auto">Click to buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-5">
+                <div class="card m-4 h-100 custom-card shadow">
+                    <img src="headset-removebg-preview.png" class="card-img-top" alt="Monka Storm & Monka Guru">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Razer Kraken V3 X (2022) Wired USB Gaming Headset</h5>
+                        <p class="card-text"><i><del>₱2,995</del></i> | ₱2,430</p>
+                        <a href="https://ecommerce.datablitz.com.ph/products/razer-kraken-v3-x-2022-wired-usb-gaming-headset?pr_prod_strat=e5_desc&pr_rec_id=bfe48afdd&pr_rec_pid=7666454134943&pr_ref_pid=4799893864583&pr_seq=uniform"
+                            target="_blank" class="btn btn-primary mt-auto">Click to buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contacts -->
+
+    <div class="container-fluid contact" id="contact">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h1 class="display-5 fw-bold py-4">CONTACTS</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                <strong>Email:</strong> <a href="mailto:cjaypoonin@gmail.com">cjaypoonin@gmail.com</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                <strong>Phone:</strong> <a href="tel:+639455807830">+63 945 580 7830</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                <strong>Facebook:</strong> <a href="https://www.facebook.com/cj.poonin.5"
+                    target="_blank">facebook.com/carljoseph</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                <strong>Instagram:</strong> <a href="https://www.instagram.com/https.seejay/"
+                    target="_blank">Instagram.com/carljoseph</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                <strong>GitHub:</strong> <a href="https://github.com/crljshpnn"
+                    target="_blank">github.com/crljsphpnn</a>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 100px;">
+            <div class="col text-center" style="color: #ffffff;">
+                <p>&copy; 2025 Cjaiye Work's. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
