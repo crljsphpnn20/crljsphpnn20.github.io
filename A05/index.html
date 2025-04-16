@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" href="mylogo.png" type="image/png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header navbar -->
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top py-3" style="background-color: transparent;">
+            <div class="container-fluid">
+                <!-- Logo on the left -->
+                <a class="navbar-brand px-4 fw-bold text-white" href="#home" style="text-shadow: 1px 1px 2px black;">INC
+                    Museum</a>
+
+                <!-- White toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(0, 0, 0, 0.85);">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel"
+                            style="text-shadow: 1px 1px 2px black;">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold text-white" href="#home"
+                                    style="text-shadow: 1px 1px 2px black;">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold text-white" href="#history"
+                                    style="text-shadow: 1px 1px 2px black;">History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold text-white" href="#gallery"
+                                    style="text-shadow: 1px 1px 2px black;">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold text-white" href="#contact"
+                                    style="text-shadow: 1px 1px 2px black;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- home section -->
+
+    <main>
+        <div class="container-fluid home d-flex align-items-center justify-content-center text-center" id="home">
+            <div class="row w-100">
+                <div class="col-12">
+                    <h1 class="title-page display-4">INC MUSEUM</h1>
+                </div>
+                <div class="col-12 col-md-8 px-4 mx-auto">
+                    <p class="title-description lead">
+                        The INC Museum is a modern cultural and religious museum located in Quezon City, Philippines.
+                        Operated by the Iglesia Ni Cristo, it showcases the Church's history, doctrines, and global
+                        expansion through interactive exhibits, historical artifacts, and multimedia displays. The
+                        museum highlights the legacy of INC founder Felix Y. Manalo and serves as an educational
+                        destination for both members and visitors.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- history section -->
+
+        <div class="container-fluid history" id="history">
+            <div class="row">
+                <div class="col-12 pt-3 mt-3 text-center">
+                    <h1 class="title-history">History</h1>
+                </div>
+                <div class="col-12 px-4">
+                    <p class="history-description">
+                        The INC Museum was established by the Iglesia Ni Cristo (Church Of Christ) to preserve and
+                        showcase its rich religious and cultural heritage. The idea began during the leadership of
+                        Eraño G. Manalo and was fully realized under Executive Minister Eduardo V. Manalo.
+                        The current museum building was inaugurated on August 26, 2015, as part of the Church’s
+                        centennial projects. Located within the INC Central Complex in Quezon City, it features modern
+                        architecture and interactive exhibits that chronicle the Church’s history—from its founding by
+                        Felix Y. Manalo in 1914 to its global expansion.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="container my-5" id="historical-heritage">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style="background-image: url(beige-bg.png);">
+                    <div class="col">
+                        <div class="card h-100 shadow border-0">
+                            <a href="https://en.wikipedia.org/wiki/Felix_Y._Manalo_National_Historical_Landmark#:~:text=Background-,The%20Felix%20Y.,is%20part%20of%20Rizal%20province." target="_blank">
+                                <img src="monument.png" class="card-img-top" alt="Felix Y. Manalo Monument" style="height: 250px; object-fit: cover;" title="Click me">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text text-justify">
+                                    The Birthsite of Brother Felix Y. Manalo, located in Barangay Tipas, Taguig City, is a historical landmark commemorating the birthplace of the Iglesia Ni Cristo's first Executive Minister. It serves as a tribute to his legacy and the beginnings of the Church's establishment in the Philippines.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow border-0">
+                            <a href="https://en.wikipedia.org/wiki/Iglesia_ni_Cristo_Museum_(Santa_Ana,_Manila)" target="_blank">
+                                <img src="sub-museum.png" class="card-img-top" alt="INC Sub Museum" style="height: 250px; object-fit: cover;" title="Click me">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text text-justify">
+                                    The first Iglesia Ni Cristo church in Honolulu, Hawaii, established in 1968, marks the beginning of the Church’s mission outside the Philippines. It symbolizes the Church’s expanding global reach and spiritual mission worldwide.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow border-0">
+                            <a href="https://www.eaglenews.ph/the-iglesia-ni-cristo-heritage-site-in-hawaii-the-first-inc-house-of-worship-in-the-west/" target="_blank">
+                                <img src="honolulu.png" class="card-img-top" alt="Honolulu Heritage Site" style="height: 250px; object-fit: cover;" title="Click me">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text text-justify">
+                                    The INC Museum Extension in Sta. Ana is a preserved site showcasing early Iglesia Ni Cristo activities. Featuring original structures and exhibits, it honors the Church’s foundational years and historical impact.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- gallery section -->
+
+        <div class="container-fluid gallery" id="gallery">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title-gallery text-center">Gallery</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active position-relative"><img src="woodpainting.png"
+                                        class="d-block w-100" alt="Wood Painting"
+                                        style="height: 400px; object-fit: cover;">
+                                    <h2 class="position-absolute bottom-0 start-50 translate-middle-x text-white text-center bg-dark bg-opacity-50 w-100 py-2 m-0"
+                                        style="font-family: Montserrat, sans-serif;">Wood Carve</h2>
+                                </div>
+                                <div class="carousel-item position-relative">
+                                    <img src="wall-anniversary.png" class="d-block w-100" alt="Main Hall"
+                                        style="height: 400px; object-fit: cover;">
+                                    <h2 class="position-absolute bottom-0 start-50 translate-middle-x text-white text-center bg-dark bg-opacity-50 w-100 py-2 m-0"
+                                        style="font-family: Montserrat, sans-serif;">110th Anniversary</h2>
+                                </div>
+                                <div class="carousel-item position-relative">
+                                    <img src="CentralModel.png" class="d-block w-100" alt="Certificates"
+                                        style="height: 400px; object-fit: cover;">
+                                    <h2 class="position-absolute bottom-0 start-50 translate-middle-x text-white text-center bg-dark bg-opacity-50 w-100 py-2 m-0"
+                                        style="font-family: Montserrat, sans-serif;">Central Church Model</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 col-md-10 col-lg-8 col-xl-9 mx-auto px-4">
+                    <p class="gallery-description">
+                        The Iglesia Ni Cristo Museum showcases the rich history, spiritual heritage, and global growth
+                        of the Church. Through interactive exhibits, archival displays, and multimedia presentations,
+                        visitors can explore the Church’s foundational teachings, key milestones, and its impact on
+                        communities worldwide. The gallery offers an insightful journey into the faith, culture, and
+                        enduring legacy of the INC.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid location d-flex align-items-center py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-12"
+                        style="background-color: rgba(0, 0, 0, 0.2); padding: 5%;">
+                        <div class="card border-0" style="border-radius: 6px;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="location.png" class="img-fluid" alt="Location Image"
+                                        style="object-fit: cover; height: 100%; width: 100%;">
+                                </div>
+                                <div class="col-md-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3 text-primary">Visit Our Location</h4>
+                                        <p class="card-text text-muted">
+                                            The Iglesia Ni Cristo Museum is located within the Central Office Complex in
+                                            Quezon City, Philippines. Easily accessible via major roads and public
+                                            transport, the museum offers a peaceful and secure environment where
+                                            visitors can explore the Church’s rich history and heritage.
+                                        </p>
+                                        <a href="https://www.google.com/maps/place/Iglesia+Ni+Cristo+Museum+-+Central+Avenue/@14.662864,121.0460135,16.49z/data=!4m6!3m5!1s0x3397ba041780258b:0x4f24620b2d086021!8m2!3d14.6628317!4d121.0487012!16s%2Fg%2F11bv3pcgjh!5m2!1e2!1e4?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"
+                                            target="_blank" class="btn btn-outline-primary mt-3">View on Map</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <!-- Contact Section -->
+         
+        <div class="container-fluid contact d-flex align-items-center py-5" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-12">
+                        <div class="text-center text-white">
+                            <h4 class="mb-3">Contact Us</h4>
+                            <p>If you have any inquiries or need further assistance, feel free to reach out.</p>
+                            <a href="mailto:info@incmuseum.com" class="btn btn-outline-light mt-3">Send an Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
