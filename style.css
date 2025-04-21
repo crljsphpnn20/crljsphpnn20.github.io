@@ -1,10 +1,14 @@
 .home {
-    padding-top: 120px;
-    min-height: 100vh;
+    min-height: 100dvh;
     background: linear-gradient(to bottom, #b40000 10%, #000133 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-container{
+    padding-top: 5%;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -15,7 +19,6 @@
     height: auto;
     border-radius: 50%;
     display: block;
-    object-fit: cover;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     border: 5px solid #ffffff;
     object-fit: cover;
@@ -24,13 +27,13 @@
 .home-fname{
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    font-size: clamp(1.8rem, 4vw, 4rem);
+    font-size: clamp(1.5rem, 4vw, 4rem);
 }
 
 .home-intro{
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    font-size: clamp(1rem ,3vw , 2rem);
+    font-size: clamp(0.8rem ,3vw , 2rem);
 }
 
 .about-me{
