@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar .nav-item a:hover {
+    text-decoration: underline;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background-color: #940000;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, black 100%), url('img/AOT-bg.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 8% 3% 0%;
+}
+
+.hero-title{
+    color: #fff;
+    font-size: clamp(2rem , 6vw, 6.3rem);
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px black;
+}
+
+.hero-description{
+    color: #ffffff;
+    font-size: clamp(0.8rem , 2vw, 1rem);
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero-section button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 6px;
+    border: 0px;
+    margin: 1% auto;
+}
+
+.btn-watch{
+    background-color: #940000;
+    color: #fff;
+    box-shadow: 2px 2px 8px black;
+}
+
+.btn-watch:hover{
+    background-color: #960000;
+}
+
+.btn-like{
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 8px black;
+}
+
+.btn-like:hover{
+    background-color: #b8b8b8;
+}
+
+.slider-section {
+    min-height: 60vh;
+    background: linear-gradient(to top, #940000 10%, black 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 2rem 1rem;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-section h1 {
+    font-family: "Jost", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3.8rem);
+    text-align: center;
+}
+
+.slider-section p {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    text-align: justify;
+}
+
+.about-section{
+    min-height: 100vh;
+    background-color: #940000;
+}
+
+.about-section h1{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 4.3rem);
+    text-align: center;
+}
+
+.about-section p{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    text-align: justify;
+}
+
+.gallery-section{
+    min-height: 100vh;
+    background-color: #940000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(img/gallery-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+    padding: 0.8rem;
+}
+
+.card p{
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.card strong{
+    color: #940000;
+}
+
+.gallery-section input{
+    background-color: #940000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+}
+
+.titans-heading {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 4.3rem);
+    text-align: center;
+}
+
+.contact-section{
+    min-height: 40vh;
+    background-color: #0d0302;
+    color: #fff;
+}
+
+.contact-section h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 4.3rem);
+    text-align: center;
+}
+
