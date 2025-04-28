@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attack on Titan | A06 | Poonin</title>
+    <link rel="icon" href="mylogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/mylogo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script>
+
+        var state = "off";
+
+        function changeState() {
+            if (state == "on") {
+                state = "off";
+                document.getElementById("btn").style.backgroundColor = "white";
+                document.getElementById("btn").style.color = "black";
+                document.getElementById("btn").innerHTML = "Like";
+            }
+            else {
+                state = "on";
+                document.getElementById("btn").style.backgroundColor = "#940000";
+                document.getElementById("btn").style.color = "white";
+                document.getElementById("btn").innerHTML = "Liked";
+            }
+        }
+
+        function showImageDetails(button) {
+            var cardBody = button.closest('.card-body');
+            var detailsElement = cardBody.querySelector('.image-details');
+
+            if (detailsElement.style.display === "none") {
+                detailsElement.style.display = "block";
+                button.value = "Hide Details";
+            }
+            else {
+                detailsElement.style.display = "none";
+                button.value = "Show Details";
+            }
+        }
+
+        function toggleContactSection() {
+            var contactDetails = document.getElementById("contactDetails");
+            var contactToggleButton = document.getElementById("contactToggleButton");
+
+            if (contactDetails.style.display === "none") {
+                contactDetails.style.display = "block";
+                contactToggleButton.innerText = "Hide";
+            }
+            else {
+                contactDetails.style.display = "none";
+                contactToggleButton.innerText = "View";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <!-- header navbar -->
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top py-3" style="background-color: transparent;">
+            <div class="container-fluid">
+                <a class="navbar-brand px-2 fw-bold text-white" href="#home"
+                    style="text-shadow: 1px 1px 2px rgb(0, 0, 0); font-size: clamp(1rem, 1.5vw, 1.2rem); font-family: Jost, sans-serif;"><img
+                        src="img/mylogo.png" alt="Logo" width="42px"> Attack on Titan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(0, 0, 0, 0.85);">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel"
+                            style="text-shadow: 1px 1px 2px rgba(0, 0, 0);">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 px-4">
+                            <li class="nav-item text-center">
+                                <a class="nav-link fw-bold text-white px-5" href="#home"
+                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem); font-family: Jost, sans-serif;">Home</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link fw-bold text-white px-5" href="#about-us"
+                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem); font-family: Jost, sans-serif;">About</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link fw-bold text-white px-5" href="#gallery"
+                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem); font-family: Jost, sans-serif;">Gallery</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link fw-bold text-white px-5" href="#contact"
+                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem);">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+
+    <div class="hero-section" id="home">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 col-xl-6">
+                    <h1 class="hero-title">
+                        Attack on Titan
+                    </h1>
+                </div>
+            </div>
+            <div class="row text-center py-2">
+                <div class="col-12 col-xl-6">
+                    <p class="hero-description" style="text-align: justify;">
+                        <b>Attack on Titan</b> is a gripping dark fantasy series set in a world where humanity is
+                        trapped
+                        behind massive walls to survive the threat of giant, man-eating Titans. The story follows Eren
+                        Yeager and his comrades in the Survey Corps as they fight for freedom and uncover the secrets
+                        that could change their world forever. With intense battles and deep themes of survival,
+                        freedom, and sacrifice, it has become one of the most acclaimed anime of all time.
+                    </p>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-12 col-xl-6">
+                    <a href="https://www.crunchyroll.com/series/GR751KNZY/attack-on-titan" target="_blank"
+                        style="text-decoration: none;">
+                        <button type="button" class="btn-watch"><img src="img/play-buttton.png" alt=""
+                                width="24px">Watch
+                            now</button>
+                    </a>
+                    <button type="button" class="btn-like" onclick="changeState()" id="btn">Like</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main cahracter section -->
+
+    <div class="container-fluid slider-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 py-3">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/eren.png" class="d-block w-100 img-fluid" alt="Eren">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/mikasa.png" class="d-block w-100 img-fluid" alt="Mikasa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/armin.png" class="d-block w-100 img-fluid" alt="Armin">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-white mt-3 mt-md-0">
+                    <h1 class="fw-bold">Main Characters</h1>
+                    <p>
+                        Attack on titan centers around three key characters which is Eren Yeager, Mikasa Ackerman, and
+                        Armin Arlert. Eren is driven by a relentless pursuit of freedom, which becomes the central force
+                        behind the series’ narrative. Mikasa, his adoptive sister, is recognized for her exceptional
+                        combat skills, unwavering loyalty, and strong sense of duty. Armin complements the group with
+                        his intelligence and strategic mindset, often providing insight and foresight in critical
+                        situations. Together, they navigate a complex world marked by conflict, survival, and shifting
+                        ideologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us -->
+
+    <div class="container-fluid about-section" id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-5 ">
+                    <h1>About</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 mb-3 ">
+                    <p>Welcome to our Attack on Titan gallery a dedicated space for fans to explore and appreciate the
+                        world of AOT through stunning visuals and curated content. Our main goal is to celebrate the
+                        epic story, breathtaking art, and unforgettable characters of Attack on Titan while providing a
+                        gateway for visitors to engage with official AOT merchandise and media. Through our gallery, we
+                        aim to affiliate and support the AOT community by connecting fans to authentic sources and
+                        enhancing their experience of this iconic series.</p>
+                </div>
+            </div>
+            <div class="row" id="multiple-image">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- gallery section -->
+
+    <div class="container-fluid gallery-section" id="gallery">
+        <div class="container my-3">
+            <div class="row text-center">
+                <div class="col p-5">
+                    <h1 class="titans-heading">
+                        The Nine Titans
+                    </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;">
+                        <img src="img/attack.jpg" class="card-img-top" alt="Attack Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Attack Titan</p>
+                                <p><strong>Age:</strong> 19 Years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Inherit:</strong> Eren Yeager</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;"">
+                        <img src=" img/armor.jpg" class="card-img-top" alt="Armor Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Armor Titan</p>
+                                <p><strong>Age:</strong> 21 Years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Inherit:</strong> Reiner Braun</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;"">
+                        <img src=" img/colossal.jpg" class="card-img-top" alt="Attack Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Colossal Titan</p>
+                                <p><strong>Age:</strong> 19 Years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Inherit:</strong> Armin Arlet</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;"">
+                        <img src=" img/female.jpg" class="card-img-top" alt="Female Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Female Titan</p>
+                                <p><strong>Age:</strong> 23 Years old</p>
+                                <p><strong>Gender:</strong> Female</p>
+                                <p><strong>Inherit:</strong> Annie Leonhart</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;">
+                        <img src="img/founding.jpg" class="card-img-top" alt="Founding Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Founding Titan</p>
+                                <p><strong>Age:</strong> 19 Years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Inherit:</strong> Eren Yeager</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;">
+                        <img src="img/hammer.jpg" class="card-img-top" alt="War Hammer Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> War Hammer Titan</p>
+                                <p><strong>Age:</strong> Unknown</p>
+                                <p><strong>Gender:</strong> Female</p>
+                                <p><strong>Inherit:</strong> Lara Tybur</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;">
+                        <img src="img/beast.jpg" class="card-img-top" alt="Beast Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Beast Titan</p>
+                                <p><strong>Age:</strong> 29 Years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Inherit:</strong> Zeke Yeager</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;">
+                        <img src="img/cart.jpg" class="card-img-top" alt="Cart Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Cart Titan</p>
+                                <p><strong>Age:</strong> 21 Years old</p>
+                                <p><strong>Gender:</strong> Female</p>
+                                <p><strong>Inherit:</strong> Pieck Finger</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card shadow-md m-1 mt-4 pt-3" style="background-color: #000000c5; color: #ffffff;">
+                        <img src="img/jaw.jpg" class="card-img-top" alt="Jaw Titan image">
+                        <div class="card-body text-center">
+                            <div class="image-details px-3" style="display: none;">
+                                <p><strong>Titan name:</strong> Jaw Titan</p>
+                                <p><strong>Age:</strong> 19 Years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Inherit:</strong> Porco Galliard</p>
+                            </div>
+                            <input type="button" value="Show Details" class="show-details"
+                                onclick="showImageDetails(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div class="container-fluid contact-section" id="contact">
+        <div class="row text-center">
+            <div class="col my-3">
+                <h1>Contact Information</h1>
+            </div>
+        </div>
+        <div class="row" id="contactDetails" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-4">
+                    <div class="card shadow rounded-3 p-3 my-2">
+                        <div class="h4 text-center">
+                            Message
+                        </div>
+                        <form method="get">
+                            <div class="row my-3">
+                                <div class="col-12 mx-1">
+                                    <label for="fullname" class="form-label">Full name</label>
+                                    <input type="text" name="fullname" id="fullname" class="form-control rounded-5"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <textarea name="message" class="form-control" placeholder="Write a message"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <input type="reset" value="Cancel" class="btn btn-secondary rounded-5">
+                                    <input type="submit" value="Register" class="btn btn-info rounded-5">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center my-5 d-flex justify-content-center flex-wrap">
+            <div class="col-sm-1 col-md-2 col-6 mb-3">
+                <h5>Email</h5>
+                <a href="mailto:cjaypoonin@gmail.com" target="_blank">
+                    cjaypoonin@gmail.com
+                </a>
+            </div>
+            <div class="col-sm-1 col-md-2 col-6 mb-3">
+                <h5>Phone</h5>
+                <a href="tel:+639455807830">
+                    +63 945 580 7830
+                </a>
+            </div>
+            <div class="col-sm-1 col-md-2 col-6 mb-3">
+                <h5>Facebook</h5>
+                <a href="https://www.facebook.com/cj.poonin.5" target="_blank">
+                    facebook.com/carljoseph
+                </a>
+            </div>
+            <div class="col-sm-1 col-md-2 col-6 mb-3">
+                <h5>Instagram</h5>
+                <a href="https://www.instagram.com/https.seejay/" target="_blank">
+                    Instagram.com/carljoseph
+                </a>
+            </div>
+            <div class="col-sm-1 col-md-2 col-6 mb-3">
+                <h5>GitHub</h5>
+                <a href="https://crljsphpnn20.github.io/" target="_blank">
+                    github.com/crljshpnn
+                </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <button onclick="toggleContactSection()" class="btn-view mt-3 px-5"
+                    id="contactToggleButton">View</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+     
+    <footer class="container-fluid py-3 footer" style="background-color: #940000; color: #fff;">
+        <div class="row text-center">
+            <div class="col">
+                <p class="mb-0">© 2025 Cjaiye Work's. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var pictures = ["desktop-wall1.jpg", "desktop-wall2.jpg", "desktop-wall3.jpg", "desktop-wall4.jpg", "desktop-wall5.jpg", "desktop-wall6.jpg", "desktop-wall7.jpg", "desktop-wall8.jpg", "desktop-wall9.jpg", "desktop-wall10.jpg", "desktop-wall11.jpg", "desktop-wall12.jpg", "desktop-wall13.jpg", "desktop-wall14.jpg", "desktop-wall15.jpg", "desktop-wall16.jpg", "desktop-wall17.jpg", "desktop-wall18.jpg", "desktop-wall19.jpg", "desktop-wall20.jpg"];
+
+        var rowElement = document.getElementById("multiple-image");
+
+        for (var i = 0; i < pictures.length; i++) {
+            rowElement.innerHTML +=
+            '<div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-3 d-flex justify-content-center">' +
+            '<img src="img/' + pictures[i] + '" alt="Image not available" width="300px" height="180px" class="rounded-2 shadow" style="object-fit: cover;">' +
+            '</div>';
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
