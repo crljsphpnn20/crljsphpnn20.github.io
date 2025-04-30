@@ -1,55 +1,89 @@
-.home {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar */
+
+.navbar a{
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav-item a:hover{
+    color: #bc4646;
+}
+
+/* hero section */
+
+.home{
     min-height: 100dvh;
-    background: linear-gradient(to bottom, #b40000 10%, #000133 90%);
+    background: linear-gradient(to bottom, #940000 10%, #000133 90% );
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
 }
 
-.home-container{
-    padding-top: 5%;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.profile-pic {
-    width: 100%;
-    height: auto;
+.home img{
+    width: 500px;
+    max-width: 100%;
     border-radius: 50%;
-    display: block;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    border: 5px solid #ffffff;
-    object-fit: cover;
+    border: 6px solid #fff;
 }
 
-.home-fname{
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
+.home h1{
     font-size: clamp(1.5rem, 4vw, 4rem);
 }
 
-.home-intro{
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    font-size: clamp(0.8rem ,3vw , 2rem);
+.home p{
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
-.about-me{
-    min-height: 60vh;
-    color: #ffffff;
+/* about section */
+
+.about{
+    min-height: 100dvh;
     background: linear-gradient(to top, #23005a 10%, #000133 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.about h1{
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-family: "Poppins", sans-serif;
 }
 
-.list-unstyled{
-    line-height: 2;
+.about img{
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0px 3rem;
 }
 
-.description{
-    line-height: 2;
+.about p{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-family: "Quicksand", sans-serif;
+    text-align: justify;
 }
+
+.about h2{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-family: "Poppins", sans-serif;
+}
+
+.about a{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-family: "Quicksand", sans-serif;
+    color: #ff0000;
+}
+
+/* project section */
 
 .project{
     min-height: 100vh;
@@ -61,24 +95,45 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* card section */
+
+.card{
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px black;
+}
+
 .custom-card {
-    background: linear-gradient(to top, #300fc7 0%, #000279 100%);
+    background: linear-gradient(to top, #12005a 10%, #000296 90%);
     color: #ffffff;
 }
 
-.card{
-    font-family: "Lato", sans-serif;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    border-radius: 0px;
+.card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .project h5{
-    font-size: clamp(0.8rem, 1vw, 1rem)
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    font-family: "Poppins", sans-serif;
 }
 
-.card-img-top{
-    border-radius: 0px;
-    margin: 0px;
+.project .btn{
+    text-decoration: none;
+    color: #ff0000;
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid #940000;
+    border-radius: 10px;
+}
+
+.project .btn:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #940000;
+}
+
+.footer{
+    background-color: #940000; 
+    color: #fff;
 }
