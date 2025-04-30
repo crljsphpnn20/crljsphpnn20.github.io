@@ -1,93 +1,100 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Profile | Poonin</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-        <link rel="icon" href="mylogo.png" type="image/png">
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile | Poonin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" href="image/mylogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-    <!-- header navbar-->
-        
-        <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg fixed-top shadow py-3">
-            <div class="container-fluid">
-                <a class="navbar-brand px-4" href="#">Profile</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about-me">About me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#project">Project</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- navbar section -->
+   
+    <nav class="navbar navbar-dark text-bg-white navbar-expand-lg fixed-top py-3">  
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home" style="text-shadow: 2px 2px 4px black;">
+                <img src="image/mylogo.png" alt="Logo" width="42px" style="margin-left: 1.5rem;">
+                Profile
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-            </div>
-        </nav>
-
-        <!-- hero page -->
-
-        <div class="container-fluid home" id="home">
-            <div class="home-container">
-                <a href="https://www.facebook.com/cj.poonin.5" target="_blank">
-                    <img class="profile-pic" src="profilepic.jpg" alt="this image don't work in this browser." />
-                </a>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 py-4 text-center">
-                    <div class="col-12 py-3 text-center">
-                        <h1 class="home-fname">Carl Joseph Poonin</h1>
-                    </div>
-                    <div class="col">
-                        <p class="home-intro">Taking Website Development | PUPSTC</p>
-                    </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end text-center flex-grow-1 px-4">
+                            <li class="nav-item">
+                                <a class="nav-link px-5" href="#home" style="text-shadow: 2px 2px 4px black;">Home</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-5" href="#about-me" style="text-shadow: 2px 2px 4px black;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-5" href="#project" style="text-shadow: 2px 2px 4px black;">Project</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        <!-- about section -->
-        
-        <div class="container-fluid about-me" id="about-me">
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="container-fluid home" id="home">
+        <div class="container text-center">
             <div class="row">
-                <div class="col text-center my-5 pt-5">
-                    <h1 class="about-me-title">About Me</h1>
+                <div class="col my-5">
+                    <a href="https://www.facebook.com/cj.poonin.5" target="_blank">
+                        <img class="profile-pic" src="image/profilepic.jpg" alt="this image don't work in this browser.">
+                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 puplogo text-center py-4">
-                    <a href="https://www.pup.edu.ph/stotomas/" target="_blank"><img src="puplogo.png"
-                            alt="Dont work in this browser." style="width: 20%" /></a>
+                <div class="col">
+                    <h1 class="home-fname">Carl Joseph Poonin</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col mx-5 px-2 text-center description">
+                <div class="col">
+                    <p class="home-intro">Taking Website Development | PUPSTC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+
+    <div class="container-fluid about" id="about-me">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col mt-5 py-3">
+                    <h1>About Me</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col my-5">
+                    <a href="https://www.pup.edu.ph/stotomas/" target="_blank">
+                        <img src="image/puplogo.png" alt="Dont work in this browser.">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 mx-auto">
                     <p>
                         Hi, I'm Carl Joseph B. Poonin, a 19-year-old second-year student at
                         the Polytechnic University of the Philippines, Sto. Tomas Campus
@@ -97,26 +104,28 @@
                     </p>
                 </div>
             </div>
+            
+            <!-- about my personal -->
 
             <div class="row">
                 <div class="col text-center">
-                    <h4 class="personal-details my-5 ">Personal Details</h4>
+                    <h2 class="personal-details mt-5 py-3">Personal Details</h2>
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 mb-3">
                             <strong>Email:</strong> <a href="mailto:cjaypoonin@gmail.com">cjaypoonin@gmail.com</a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
-                            <strong>Phone:</strong> <a href="tel:+639455807830">+63 945 580 7830</a>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 mb-3">
+                            <strong>Phone:</strong> <a href="tel:+639455807830"> +63 945 580 7830</a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 mb-3">
                             <strong>FB:</strong> <a href="https://www.facebook.com/cj.poonin.5"
                                 target="_blank">facebook.com/carljoseph</a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 mb-3">
                             <strong>IG:</strong> <a href="https://www.instagram.com/https.seejay/"
                                 target="_blank">Instagram.com/carljoseph</a>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 text-center mb-3">
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-2 mb-3">
                             <strong>GitHub:</strong> <a href="https://github.com/crljshpnn"
                                 target="_blank">github.com/crljsphpnn</a>
                         </div>
@@ -124,58 +133,63 @@
                 </div>
             </div>
         </div>
-        
-        <!-- project section -->
-        
-        <div class="container-fluid project" id="project">
+    </div>
+
+    <!-- project section -->
+
+    <div class="container-fluid project" id="project">
+        <div class="container-fluid text-center">
             <div class="row">
-                <div class="col">
-                    <h1 class="projects my-5 py-5 text-center">Projects</h1>
+                <div class="col-12">
+                    <h1 class="projects mt-5 py-3">Projects</h1>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 justify-content-center">
-                <div class="col mb-4">
-                    <div class="card w-100 custom-card shadow">
-                        <img src="A04Thumbnail.png" class="card-img-top" alt="This image doesn't work in this browser.">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-center my-3">A04 | Product Website</h5>
-                            <a href="https://crljsphpnn20.github.io/A04/" target="_blank"
-                                class="btn btn-outline-danger mt-auto">
-                                <b>Go to Webpage</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card w-100 custom-card shadow">
-                        <img src="A05Thumbnail.png" class="card-img-top" alt="This image doesn't work in this browser.">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-center my-3">A05 | Tour Place Website</h5>
-                            <a href="https://crljsphpnn20.github.io/A05/" target="_blank"
-                                class="btn btn-outline-danger mt-auto">
-                                <b>Go to Webpage</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="card w-100 custom-card shadow">
-                        <img src="A06Thumbnail.png" class="card-img-top" alt="This image doesn't work in this browser.">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-center my-3">A06 | Attack on Titan Gallery</h5>
-                            <a href="https://crljsphpnn20.github.io/A06/" target="_blank"
-                                class="btn btn-outline-danger mt-auto">
-                                <b>Go to Webpage</b>
-                            </a>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="row " id="projects-card">
+                    
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-            crossorigin="anonymous"></script>
-    </body>
+    <!-- footer section -->
 
-    </html>
+    <footer class="container-fluid py-3 footer">
+        <div class="row text-center">
+            <div class="col">
+                <p class="mb-0">&copy; 2025 Cjaiye Work's. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var pictures = ["A04Thumbnail.png", "A05Thumbnail.png", "A06Thumbnail.png"];
+        var title = ["A04 | Product Website", "A05 | Tour Place Website", "A06 | Attack on Titan Gallery", "A07 | In Process..."];
+        var link = ["https://crljsphpnn20.github.io/A04/", "https://crljsphpnn20.github.io/A05/", "https://crljsphpnn20.github.io/A06/", "https://crljsphpnn20.github.io/A07/"];
+
+        var rowElement = document.getElementById("projects-card");
+
+        for (var i = 0; i < pictures.length; i++) {
+            rowElement.innerHTML += `
+                <div class="col-12 col-md-6 col-xl-4 mb-3">
+                    <div class="card w-100 custom-card mx-auto">
+                        <img src="image/`+ pictures[i] +`" alt="This image doesn't work in this browser.">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center mb-4">`+ title[i]+ `</h5>
+                            <a href="`+ link[i] +`" target="_blank" class="btn">
+                                <b>Go to Website</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
