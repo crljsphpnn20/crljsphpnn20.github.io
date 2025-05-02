@@ -15,7 +15,7 @@
 /* hero secrion */
 
 .home{
-    min-height: 100dvh;
+    min-height: 60dvh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)),url(image/home-bg.jpg);
     background-position: right;
     background-attachment: fixed;
@@ -92,7 +92,7 @@
 }
 
 .about{
-    min-height: 50dvh;
+    min-height: 35dvh;
     background-color: #000;
     display: flex;
     justify-content: center;
