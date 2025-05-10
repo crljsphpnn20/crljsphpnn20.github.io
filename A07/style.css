@@ -31,6 +31,8 @@
     border: 4px solid #fff;
 }
 
+/* search bar */
+
 .search-bar{
     color: #fff;
     font-size: clamp(0.8rem, 2vw, 1.2rem);
@@ -93,6 +95,8 @@
     font-size: clamp(2rem, 5vw, 5rem);
     font-weight: 400;
 }
+
+/* about section */
 
 .about{
     min-height: 35dvh;
