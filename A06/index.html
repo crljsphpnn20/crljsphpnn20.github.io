@@ -18,6 +18,24 @@
 
     <script>
 
+        var mode = "light";
+
+        function changeMode() {
+            var body = document.getElementById("body");
+            var colorBtn = document.getElementById("colorBtn");
+
+            mode = mode === "light" ? "dark" : "light";
+
+            var btnText = mode === "dark" ? "Light Mode" : "Dark Mode";
+            var btnClass = mode === "dark" ? "btn-light" : "btn-dark";
+
+            colorBtn.classList.remove("btn-light", "btn-dark");
+            colorBtn.classList.add(btnClass);
+            colorBtn.innerHTML = btnText;
+
+            body.setAttribute("data-bs-theme", mode);
+        }
+
         var state = "off";
 
         function changeState() {
@@ -34,10 +52,11 @@
                 document.getElementById("btn").innerHTML = "Liked";
             }
         }
-
+        
         function showImageDetails(button) {
             var cardBody = button.closest('.card-body');
             var detailsElement = cardBody.querySelector('.image-details');
+
 
             if (detailsElement.style.display === "none") {
                 detailsElement.style.display = "block";
@@ -66,52 +85,49 @@
     </script>
 </head>
 
-<body>
+<body id="body">
 
-    <!-- header navbar -->
-
-    <header>
-        <nav class="navbar navbar-dark navbar-expand-lg fixed-top py-3" style="background-color: transparent;">
-            <div class="container-fluid">
-                <a class="navbar-brand px-2 fw-bold text-white" href="#home"
-                    style="text-shadow: 1px 1px 2px rgb(0, 0, 0); font-size: clamp(1rem, 1.5vw, 1.2rem); font-family: Jost, sans-serif;"><img
-                        src="img/mylogo.png" alt="Logo" width="42px"> Attack on Titan</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(0, 0, 0, 0.85);">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel"
-                            style="text-shadow: 1px 1px 2px rgba(0, 0, 0);">Menu</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 px-4">
-                            <li class="nav-item text-center">
-                                <a class="nav-link fw-bold text-white px-5" href="#home"
-                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem); font-family: Jost, sans-serif;">Home</a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link fw-bold text-white px-5" href="#about-us"
-                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem); font-family: Jost, sans-serif;">About</a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link fw-bold text-white px-5" href="#gallery"
-                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem); font-family: Jost, sans-serif;">Gallery</a>
-                            </li>
-                            <li class="nav-item text-center">
-                                <a class="nav-link fw-bold text-white px-5" href="#contact"
-                                    style="text-shadow: 1px 1px 5px black; font-size: clamp(1.1rem, 1.5vw, 1rem);">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+    <nav class="navbar navbar-expand-lg fixed-top py-3" style="color: #fff;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#"><img
+                    src="img/mylogo.png" alt="" width="42px"> Attack on Titan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"  style="background-color: rgba(0, 0, 0, 0.85);">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #fff;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="https://crljsphpnn20.github.io/">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="colorBtn" onclick="changeMode()" class="btn btn-dark px-3 py-2 mx-3">
+                                Dark Mode
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- hero section -->
 
@@ -144,7 +160,8 @@
                                 width="24px">Watch
                             now</button>
                     </a>
-                    <button type="button" class="btn-like" onclick="changeState()" id="btn">Like</button>
+                    <button type="button" class="btn-like" onclick="changeState()" id="btn"
+                        style="color: #000; background-color: #fff;">Like</button>
                 </div>
             </div>
         </div>
@@ -180,7 +197,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 text-white mt-3 mt-md-0">
+                <div class="col-12 col-md-6 mt-3 mt-md-0">
                     <h1 class="fw-bold">Main Characters</h1>
                     <p>
                         Attack on titan centers around three key characters which is Eren Yeager, Mikasa Ackerman, and
@@ -198,7 +215,7 @@
 
     <!-- About us -->
 
-    <div class="container-fluid about-section" id="about-us">
+    <div class="container-fluid about-section" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-12 py-5 ">
@@ -453,7 +470,7 @@
     </div>
 
     <!-- footer section -->
-     
+
     <footer class="container-fluid py-3 footer" style="background-color: #940000; color: #fff;">
         <div class="row text-center">
             <div class="col">
@@ -470,16 +487,16 @@
 
         for (var i = 0; i < pictures.length; i++) {
             rowElement.innerHTML +=
-            '<div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-3 d-flex justify-content-center">' +
-            '<img src="img/' + pictures[i] + '" alt="Image not available" width="300px" height="180px" class="rounded-2 shadow" style="object-fit: cover;">' +
-            '</div>';
+                '<div class="col-12 col-md-6 col-lg-4 col-xxl-3 my-3 d-flex justify-content-center">' +
+                '<img src="img/' + pictures[i] + '" alt="Image not available" width="300px" height="180px" class="rounded-2 shadow" style="object-fit: cover;">' +
+                '</div>';
         }
 
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -131,7 +131,7 @@
             var digimonName = digimon.name;
             var level = digimon.level;
             var image = digimon.img;
-
+            
             mainContainer.innerHTML += `
                 <div class="col-6 col-sm-4 col-md-3 mb-3 mx-auto">
                     <div class="card rounded-3 p-3 my-3 shadow text-center mx-auto" style="background-Color: #fff;">
@@ -139,6 +139,9 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="name text-center mb-4">` + name + `</h5>
                             <p class="level text-center mb-2">Level: <b>` + level + `</b></p>
+                            <div>
+                                <a href="view.html?name=` + name + `"><button class="btn btn-dark rounded-3 px-3 py-2 mt-3" style="font-size: clamp(0.7rem, 2vw, 1.2rem);">View Description</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>`;

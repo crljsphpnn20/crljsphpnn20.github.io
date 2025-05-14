@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DigiDex | A07 | Poonin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="icon" href="../A07/image/digidex-logo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+
+        const Colors = {
+            "Fresh": "#cfcfcf",
+            "Rookie": "#fee18f",
+            "Champion": "#1fffb3",
+            "Ultimate": "#74bcff",
+            "Mega": "#ff5e5e"
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- navbar section -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-dark text-bg-dark navbar-expand-lg fixed-top py-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand px-2 fw-bold text-white" href="#home">
+                            <img src="../image/digidex-logo.png" alt="Logo" width="40px">
+                            DigiDex
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel" style="background-color: #212529">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel" style="font-family: Silkscreen, sans-serif;">Menu</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 px-4">
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link fw-bold text-white px-5" href="../index.html#home">Home</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link fw-bold text-white px-5"
+                                            href="Characters.html">Characters</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link fw-bold text-white px-5" href="../index.html#about">About</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link fw-bold text-white px-5" href="https://crljsphpnn20.github.io/">Profile</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 mt-5 view">
+    <div class="container">
+        <div class="row text-center" id="digiCards">
+            <div class="col-12 col-sm-8 col-md-6 mx-auto">
+                <div id="card" class="card rounded-5 p-3 mt-3 shadow text-center mx-auto">
+                    <img src="" id="img" alt="Digimon Image">
+                    <div class="card-body">
+                        <h2 class="name-description">Description</h2>
+                        <p class="name" id="name"></p>
+                        <p class="level" id="level"></p>
+                    </div>
+                </div>
+                <a href="../Pages/Characters.html"><div class="btn btn-dark py-2 px-5 rounded-5 my-4 mx-auto shadow">Back</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const digimonName = urlParams.get('name');
+
+    const getDigimon = async () => {
+        const response = await fetch('https://digimon-api.vercel.app/api/digimon/name/' + digimonName);
+        const data = await response.json();
+        const digimon = data[0];
+
+        document.getElementById("img").src = digimon.img;
+        document.getElementById("name").innerHTML = "Name: " + digimon.name;
+        document.getElementById("level").innerHTML = "Level: " + digimon.level;
+
+        const cardElement = document.getElementById("card");
+        const bgColor = Colors[digimon.level] || "#ccffc1";
+        cardElement.style.backgroundColor = bgColor;
+
+    };
+
+    getDigimon();
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -3,13 +3,20 @@
     padding: 0px;
 }
 
-.navbar .nav-item a:hover {
-    text-decoration: underline;
+.navbar .navbar-brand:hover{
+    color: #fff;
+}
+
+.navbar a{
+    color: #fff;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    text-shadow: 0px 0px 6px black;
 }
 
 .hero-section{
+    color: #fff;
     min-height: 100vh;
-    background-color: #940000; /* in case my image doesn't work*/ 
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, black 100%), url('img/AOT-bg.png');
     background-position: center;
     background-size: cover;
@@ -27,17 +34,16 @@
     font-family: "Jost", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    text-shadow: 2px 2px 8px black;
 }
 
 .hero-description{
-    color: #ffffff;
+    color: #fff;
     font-size: clamp(0.8rem , 2vw, 1rem);
     font-family: "Montserrat", sans-serif;
-    text-shadow: 2px 2px 4px black;
 }
 
 .hero-section button{
+    color: #fff;
     width: 10rem;
     height: 3rem;
     border-radius: 6px;
@@ -49,29 +55,17 @@
 
 .btn-watch{
     background-color: #940000;
+    box-shadow: 0px 0px 4px #000;
     color: #fff;
-    box-shadow: 2px 2px 8px black;
 }
 
 .btn-watch:hover{
     background-color: #7a0000;
 }
 
-.btn-like{
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 8px #000;
-}
-
-.slider-section {
-    min-height: 60vh;
-    background: linear-gradient(to top, #940000 10%, black 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    padding: 2rem 1rem;
-    overflow: hidden;
+.slider-section{
+    margin-top: 5rem;
+    min-height: 50dvh;
 }
 
 .carousel-item {
@@ -99,11 +93,9 @@
 
 .about-section{
     min-height: 150vh;
-    background-color: #940000;
 }
 
 .about-section h1{
-    color: #fff;
     font-weight: 700;
     font-family: "Jost", sans-serif;
     font-size: clamp(1.8rem, 4vw, 4.3rem);
@@ -111,25 +103,20 @@
 }
 
 .about-section p{
-    color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: clamp(0.8rem, 2vw, 1rem);
     text-align: justify;
 }
 
+
 .gallery-section{
     min-height: 100vh;
-    background-color: #940000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url(img/gallery-bg.jpg);
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .titans-heading {
-    color: #fff;
     font-weight: 700;
     font-family: "Jost", sans-serif;
     font-size: clamp(1.8rem, 4vw, 4.3rem);
@@ -155,8 +142,8 @@
 }
 
 .card strong{
-    color: #940000;
-    font-weight: 800;
+    color: #db0000;
+    font-weight: 600;
     font-family: "Jost", sans-serif;
 }
 
@@ -166,8 +153,6 @@
 }
 
 .gallery-section input{
-    background-color: #610000;
-    color: #fff;
     border: none;
     width: 200px;
     height: 60px;
@@ -178,8 +163,6 @@
 
 .contact-section{
     min-height: 40vh;
-    background-color: #0d0302;
-    color: #fff;
 }
 
 .contact-section h1{

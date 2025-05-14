@@ -118,3 +118,18 @@
     font-family: "Gugi", sans-serif;
     font-size: clamp(0.8rem, 2vw, 1.5rem);
 }
+
+.view{
+    min-height: 100dvh;
+    background-color: #b6b6b6;
+}
+.name-description{
+    color: #fff;
+    text-shadow: 0px 0px 8px black;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-family: "Gugi", sans-serif;
+    font-weight: 300;
+}
+.view img{
+    border-radius: 50%;
+}
