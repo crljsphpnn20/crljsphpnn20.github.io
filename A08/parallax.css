@@ -1,0 +1,123 @@
+/* PARALLAX.CSS */
+/*CSS created by Christopher Jay De Claro*/
+/*github.com/cjdeclaro*/
+
+/*Key Art default settings*/
+.keyart,
+.keyart_layer {
+	height: 1000px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+/*ADD OR REMOVE LAYERS AS NEEDED*/
+
+#keyart-0 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img/parallax0.png);
+}
+
+#keyart-1 {
+	background-image: url(img/parallax1.png);
+}
+
+#keyart-2 {
+	background-image: url(img/parallax2.png);
+}
+
+#keyart-3 {
+	background-image: url(img/parallax3.png);
+}
+
+#keyart-4 {
+	background-image: url(img/parallax4.png);
+}
+
+#keyart-5 {
+	background-image: url(img/parallax5.png);
+}
+
+#keyart-6 {
+	background-image: url(img/parallax6.png);
+}
+
+#keyart-7 {
+	background-image: url(img/parallax7.png);
+}
+
+#keyart-8 {
+	background-image: url(img/parallax8.png);
+}
+
+#keyart-scrim {
+	opacity: 0;
+}
+
+/* about section style */
+
+.about h1{
+	font-size: clamp(1.8rem, 4vw, 4rem);
+	font-family: "Balthazar", serif;
+}
+
+.about p{
+	font-size: clamp(0.8rem, 2vw, 1.3rem);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+	text-align: justify;
+}
+
+.about strong{
+	font-size: clamp(0.8rem, 2vw, 1.6rem);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+}
+
+.episode h1,h5{
+	font-size: clamp(1.8rem, 4vw, 4rem);
+	font-family: "Balthazar", serif;
+}
+
+.volume h1{
+	font-size: clamp(1.8rem, 3vw, 3rem);
+	font-family: "Balthazar", serif;
+}
+
+.volume a{
+	text-decoration: none;
+}
+
+.volume p{
+	font-size: clamp(0.8rem, 2vw, 1.1rem);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+	text-align: justify;
+}
+
+.contact h1{
+	font-size: clamp(1.8rem, 4vw, 4rem);
+	font-family: "Balthazar", serif;
+
+}

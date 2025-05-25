@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="parallax.css" />
+	<title>Parallax | A08 | Poonin</title>
+	<link rel="shortcut icon" href="../image/mylogo.png" type="image/png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Balthazar&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<script>
+		var state = "off";
+
+		function changeState() {
+			var btn = document.getElementById("btn");
+
+			if (state == "on") {
+				state = "off";
+				btn.classList.remove("btn-primary");
+				btn.classList.add("btn-outline-primary");
+				console.log(false);
+			} else {
+				state = "on";
+				btn.classList.remove("btn-outline-primary");
+				btn.classList.add("btn-primary");
+				console.log(true);
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<!-- navbar section -->
+
+	<header>
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top py-3" style="background-color: transparent;">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(0, 0, 0, 0.85);">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title fw-bold text-white" id="offcanvasNavbarLabel"
+							style="text-shadow: 1px 1px 2px black;">Menu</h5>
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+							aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-center flex-grow-1 px-3">
+							<li class="nav-item">
+								<a class="nav-link fw-bold text-white px-5" href="https://crljsphpnn20.github.io/"
+									style="text-shadow: 1px 1px 5px black; font-size: clamp(1rem, 2vw, 1.4rem); font-family: Balthazar, serif;">Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link fw-bold text-white px-5" href="#episode"
+									style="text-shadow: 1px 1px 5px black; font-size: clamp(1rem, 2vw, 1.4rem); font-family: Balthazar, serif;">Episode</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link fw-bold text-white px-5" href="#parallax"
+									style="text-shadow: 1px 1px 5px black; font-size: clamp(1rem, 2vw, 1.4rem); font-family: Balthazar, serif;">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link fw-bold text-white px-5" href="#about"
+									style="text-shadow: 1px 1px 5px black; font-size: clamp(1rem, 2vw, 1.4rem); font-family: Balthazar, serif;">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link fw-bold text-white px-5" href="#contact"
+									style="text-shadow: 1px 1px 5px black; font-size: clamp(1rem, 2vw, 1.4rem); font-family: Balthazar, serif;">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="keyart home" id="parallax">
+			<div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+			<div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
+			<div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
+			<div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
+			<div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+			<div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+			<div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
+			<div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+			<div class="keyart_layer" id="keyart-8" data-speed="100"></div>
+		</div>
+	</section>
+
+	<section class="main-content">
+		<div style="height: 3500px; background-color:rgb(0, 0, 0); color: #fff;">
+
+			<!-- about section -->
+
+			<div class="container-fluid about" id="about">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-12 mt-5 pt-5">
+							<h1>About Us</h1>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-12 col-md-6 py-5">
+							<div id="carouselExampleFade" class="carousel slide carousel-fade">
+								<div class="carousel-inner my-5">
+									<div class="carousel-item active">
+										<img src="img/Itadori.png" class="d-block w-100 img-fluid" alt="Itadori">
+									</div>
+									<div class="carousel-item">
+										<img src="img/Kugisaki.png" class="d-block w-100 img-fluid" alt="Kugisaki">
+									</div>
+									<div class="carousel-item">
+										<img src="img/Megumi.png" class="d-block w-100 img-fluid" alt="Megumi">
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button"
+									data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button"
+									data-bs-target="#carouselExampleFade" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 mt-3 mt-md-0 py-5">
+							<h1 class="text-center">Main Characters</h1>
+							<p class="py-5">
+								<strong>Jujutsu Kaisen</strong> follows the story of Yuji Itadori, Nobara Kugisaki, and
+								Megumi Fushiguro, first year students at the Tokyo Jujutsu High. Yuji, after swallowing
+								a
+								cursed object, becomes the host of a powerful curse named Sukuna. Nobara brings fierce
+								determination and combat prowess, blending her strength with a bold personality. Megumi,
+								reserved yet incredibly skilled, uses his intellect and shadow-based techniques to face
+								dangerous curses. Together, they confront dark forces and uncover deeper truths within
+								the world of jujutsu sorcery.
+							</p>
+						</div>
+					</div>
+					<div class="row text-center">
+						<div class="col-12">
+							<strong><i>"I don't know how I'll feel when I'm dead, but I don't want to regret the way I
+									lived." - Yuji Itadori</i></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- episode section -->
+
+			<div class="container-fluid episode" id="episode">
+				<div class="container">
+					<div class="row">
+						<div class="col pt-5 mt-5">
+							<h1>Episodes</h1>
+						</div>
+						<hr>
+					</div>
+					<div class="container text-center">
+						<div class="row">
+
+							<!-- Episode 1 -->
+							<div class="col-12 col-sm-6 col-md-4 py-5">
+								<h5>S1E1 - Ryomen Sukuna</h5>
+								<div class="ratio ratio-16x9">
+									<iframe src="https://www.youtube.com/embed/miiLadou1cw" title="S1E1 - Ryomen Sukuna"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+
+							<!-- Episode 2 -->
+							<div class="col-12 col-sm-6 col-md-4 py-5">
+								<h5>S1E2 - For Myself</h5>
+								<div class="ratio ratio-16x9">
+									<iframe src="https://www.youtube.com/embed/YKnowHCkAA8" title="S1E2 - For Myself"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+
+							<!-- Episode 3 -->
+							<div class="col-12 col-sm-6 col-md-4 py-5">
+								<h5>S1E3 - Girl of Steel</h5>
+								<div class="ratio ratio-16x9">
+									<iframe src="https://www.youtube.com/embed/v_vqYyQ5L9s" title="S1E3 - Girl of Steel"
+										allowfullscreen></iframe>
+								</div>
+							</div>
+
+							<a href="https://www.youtube.com/playlist?list=PLxSscENEp7JisDU6GAJuyNpVwDvCm-f3J"
+								target="_blank">
+								<div class="btn btn-danger my-3">Watch More</div>
+							</a>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+
+			<!-- volume section -->
+
+			<div class="container-fluid volume">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-6 d-flex justify-content-center align-items-center py-5 mt-5">
+							<img src="img/vol.png" alt="Volume Cover" class="img-fluid">
+						</div>
+						<div class="col-12 col-sm-6 py-5 mt-5">
+							<h1 class="my-3">Jujutsu Kaisen Kyoto Sister School Exchange Event Arc</h1>
+							<p class="my-3">
+								Jujutsu High is set to host the annual Kyoto Sister School Exchange Event, a fierce
+								competition between the Tokyo and Kyoto campuses. As Fushiguro, Kugisaki, and
+								second-years Maki, Toge, and Panda gather to welcome their Kyoto counterparts, tensions
+								rise the moment Todo and his team arrive. The atmosphere quickly intensifies—especially
+								when Gojo makes his trademark dramatic entrance.
+							</p>
+							<a
+								href="https://www.amazon.com/Jujutsu-Kaisen-Vol-Gege-Akutami-ebook/dp/B081QW3QFP/ref=tmm_kin_swatch_0">
+								<div class="btn btn-outline-danger my-3">Buy</div>
+							</a>
+							<div id="btn" class="btn btn-outline-primary my-3 px-3" onclick="changeState()">Subscribe
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-10 my-3">
+							<div class="video-container">
+								<video class="w-100" src="video/4k clips.mp4" autoplay loop muted controls></video>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col my-3">
+							<p>
+								<strong><i>Jujutsu Kaisen</i></strong> follows Yuji Itadori, a kind hearted high
+								schooler with great physical abilities. His quiet life changes when he swallows a Cursed
+								Object a finger of the deadly Curse, Ryomen Sukuna to save his friends, becoming
+								Sukuna’s host.
+							</p>
+							<p class="py-3">
+								Recruited by Jujutsu Sorcerer Satoru Gojo, Yuji joins Tokyo Jujutsu High and trains with
+								classmates Megumi and Nobara to fight Curses. His mission is to collect all of Sukuna’s
+								fingers to ultimately destroy him.
+							</p>
+							<p>
+								<strong>Jujutsu Kaisen</strong> blends intense action with emotional depth, exploring
+								life, death, and morality as its characters face powerful enemies and personal trials.
+								It's a gripping, standout anime of its generation.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- contact section -->
+
+			<div class="container-fluid contact" id="contact">
+				<div class="container">
+					<form action="#home">
+						<div class="row">
+							<div class="col-12 py-5 text-center">
+								<h1>Contact Us</h1>
+								<hr>
+							</div>
+							<form method="get" action="/your-target-url">
+								<div class="col-12 col-sm-6 col-md-4 text-center mb-4">
+									<textarea name="message" class="form-control mb-3" rows="5"
+										placeholder="Write any message here..." required></textarea>
+									<div class="d-grid gap-2 d-md-block">
+										<button type="reset" class="btn btn-secondary rounded-3 mx-1">Clear</button>
+										<button type="submit" class="btn btn-primary rounded-3 mx-1">Send</button>
+									</div>
+								</div>
+							</form>
+
+							<div class="col-12 col-sm-6 col-md-4 text-center mb-4">
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<strong>FB:</strong>
+										<a href="https://www.facebook.com/cj.poonin.5"
+											target="_blank">facebook.com/cj.poonin.5</a>
+									</li>
+									<li class="mb-2">
+										<strong>IG:</strong>
+										<a href="https://www.instagram.com/https.seejay/"
+											target="_blank">instagram.com/https.seejay</a>
+									</li>
+									<li class="mb-2">
+										<strong>GitHub:</strong>
+										<a href="https://github.com/crljsphpnn20" target="_blank">github.com/crljshpnn</a>
+									</li>
+									<li class="mb-2">
+										<strong>Phone #:</strong>
+										<a href="tel:+639455807830">+63 945 580 7830</a>
+									</li>
+									<li class="mb-2">
+										<strong>Email:</strong>
+										<a href="mailto:cjaypoonin@gmail.com">cjaypoonin@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 text-center mb-4">
+								<img src="img/Logo.png" alt="Jujutsu Kaisen Logo" class="img-fluid"
+									style="max-height: 150px;">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!-- footer section -->
+
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center">
+							<p class="mt-5">&copy; 2025 Cjaiye Work's. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Uses JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
