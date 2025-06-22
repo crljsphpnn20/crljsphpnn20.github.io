@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar a:hover {
+    color: #2c0136;
+}
+
+.home {
+    min-height: 100dvh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.product-title {
+    font-size: clamp(2rem, 5vw, 5rem);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.product-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-weight: 500;
+}
+
+.specs {
+    min-height: 180dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+}
+
+.specs-title {
+    font-size: clamp(2rem, 4vw, 4vw);
+    text-transform: uppercase;
+}
+
+.list-unstyled li {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    margin: 2.4rem 0;
+}
+
+.product {
+    min-height: 80dvh;
+    background: linear-gradient(to top, #131e52 0%, #0104ad 100%);
+}
+
+.about-description {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    line-height: 2.4rem;
+}
+
+.contact {
+    background: #020015;
+}
+
+.contact-title {
+    color: #fff;
+}
+
+.contact strong {
+    color: #fff;
+}
+
+.shop {
+    min-height: 94.1dvh;
+}
+
