@@ -27,7 +27,7 @@ body {
 .product-description {
     font-family: "Montserrat", sans-serif;
     font-size: clamp(0.8rem, 2vw, 1.4rem);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .specs {
